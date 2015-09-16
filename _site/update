@@ -1,4 +1,0 @@
-echo "Updating jmorais.com"
-jekyll build
-rsync -rv _site/ jmorais.com:/home/jmorais/webapps/jmorais/
-echo $'\360\237\215\273  Updated!'
