@@ -90,6 +90,9 @@ nav#menu ul li a {
 .facebook { background-color: #306199 !important; }
 .facebook:hover { background-color:#244872 !important; }
 
+.codefarm { background-color: #F6A316 !important; }
+.codefarm:hover { background-color: #e79509 !important; }
+
 .twitter { background-color: #26c4f1 !important; }
 .twitter:hover { background-color:#0eaad6 !important;}
 
@@ -123,7 +126,11 @@ nav#menu ul li a {
   margin-left: .2em;
  
 }
- 
+.icon-codefarm{
+background: #F6A316 url(https://codefarm.com.br/img/square.png) no-repeat fixed left top;
+background-size: 20px 20px;
+}
+.icon-codefarm:before { content: ' '} 
 .icon-mail-alt:before { content: '\e80a'; }
 .icon-facebook:before { content: '\e801'; }
 .icon-github:before { content: '\e800'; } 
