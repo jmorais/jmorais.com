@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/jmorais
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://jmorais.com
+  * I am jmorais (https://keybase.io/jmorais) on keybase.
+  * I have a public key with fingerprint F13B E49A F2B5 FFA2 7078  6384 8C35 199F 941D A080
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01016e0f04e59c375e74e0d655e2b30e33bd47f5ef6f6b735d83a74c6d012717cd680a",
+            "fingerprint": "f13be49af2b5ffa2707863848c35199f941da080",
+            "host": "keybase.io",
+            "key_id": "8c35199f941da080",
+            "kid": "01016e0f04e59c375e74e0d655e2b30e33bd47f5ef6f6b735d83a74c6d012717cd680a",
+            "uid": "40248339a8a8255a7992972ea6117300",
+            "username": "jmorais"
+        },
+        "service": {
+            "hostname": "jmorais.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1442441134,
+    "expire_in": 157680000,
+    "prev": "890e14ad725daf31118636ee05f3fbbe8c9a9843388ed9b252348656fa1144ab",
+    "seqno": 22,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Comment: GPGTools - https://gpgtools.org
+
+owGtUmtMFFcYXZAFWctD6gOKaDJI7cKK834shVIlaKgaS6TZVSLO487uFNjB3Vne
+uEaDDbUktoqACGtoSyBqbdbQBtMSiFDaWrBUoTQlTasxyFqigoJKKZ0h7Y8m/dn7
+5+Z+95zzne/kOxm2TGcIeI+I8Z6OO38k4Pokp8t5NuGrgDhZKIPMFVA+WLpAgQBc
+Sl6+JEBmCEZghASwCOOAYHiMIgCFA1ggCQKgHAYDDOMEnBIJIJIiyVEYIdAYS+E8
+KcAISiEUL5A0zEImSJQcNuAsckoORZUVEYwDOMOKKEeIIotSMEWTGI3TPEYgDCMy
+OCKwMA2rRLvs0hiqOY51gWRJVmvqI2/J3n/g/2ff7iU5HEZxGsMYlmZplCBYimFQ
+hkIBSyIIhcFaX7cLOB1sIVDRbxfKTlZyQVUmSC0WSzzQctUG+TcgmZcLVWaRU1Zk
+Xi5QP+yKUmTWeEpZkQYsAVze3xJ5nOQQ1BBVQjFwuiTZAZkRFckrkqaJ4DiK4wiC
+4SYIlBZJTpAnaQiCUgdRj9YGFGuRMTBAcFag0LcIgRUxBEHU6EkAYELERI4DNM+w
+DI1jGE0DgeFQAsVwmiRIkUXUJiwHaVMdcsiQGUVVo6xNFXVJNgeruJ0AqjLUBK4L
+0gUYdMH6QG2/dIbQyH+WzvIkUtcWDrVN9wyGT58hDPFp305nYqGuiMz1sauOpmSU
+9G4Zr51IifZ3pX+alBZNht1s7mzf/v2TPW5h6E5TTOA+TlzOnUg9dyC7OzfZLNb4
+V1T/2tXYnfsK6tofVbXyMVNeG3yxftw/oz+44Gv/esTanUVd2TVy+mC3snFX7sIH
+Zw2ONybyj8vNjT2Zs9m9T603Su9PWfuB7FlzZHtJe9ycrs4aOlJ/HF6dkzCU2LrN
+2PFTDpfmPbm1buwHy6OjP6/4PP7lx5YmfLwj7vfFkHh/61gwNAVeTJ881bI21Tjz
+5mVTzX371YXVtsHrdXb7H/1f9D+KLQ37c0upTfY5Lsxu+OV2w0VDwI/3PiSbL3np
+K3sP+z8u8UbvjdL7k6727Qxx1M8k3dL7j+nfNYqjLxxrKehMeT6RWuVumArPeHot
+Meb82CeX06UpWP9+QW+nZ47dOTv8FX/HDw3MR69B9Yujowcqon67edcI3bUOeeZ3
+z8VXDjZuHa42WqzvVNqbLkR4t4U+9w0GVfvPrl++Fugz0mr3l/ecueH5MmSOeraj
+JWdoMPveS+4B/YbWrL4GfjZo5SoocZlpU2VbjSXq9q1D9Ztl38DrHYelxa7QdRbd
+/OZY5SEofpCQeso2/NmJTs++mO/ae43luAu79JEy2Ygn7L72ID2yb8eeb84FDkS8
+2rux7LVND7P+Ag==
+=L3+J
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jmorais
+
+==================================================================
