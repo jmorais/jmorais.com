@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   padding-top: 130px;
   margin: 0;
-  
+
  -moz-user-select: none;
  -khtml-user-select: none;
  -webkit-user-select: none;
@@ -57,7 +57,7 @@ nav#menu ul li {
   margin-right: 5px;
   line-height: 50px;
   height: 50px;
-  width: 150px;
+  width: 125px;
 
   -webkit-transition:background-color 0.2s ease-in-out;
   -moz-transition:background-color 0.2s ease-in-out;
@@ -74,7 +74,7 @@ nav#menu ul li.active, nav#menu ul li:hover {
 }
 
 nav#menu ul li:hover {
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 nav#menu ul li a {
@@ -101,40 +101,61 @@ nav#menu ul li a {
 
 @font-face {
   font-family: 'social';
-  src: url('../font/social.eot?50225132');
-  src: url('../font/social.eot?50225132#iefix') format('embedded-opentype'),
-       url('../font/social.woff?50225132') format('woff'),
-       url('../font/social.ttf?50225132') format('truetype'),
-       url('../font/social.svg?50225132#social') format('svg');
+  src: url('../font/social.eot?41739959');
+  src: url('../font/social.eot?41739959#iefix') format('embedded-opentype'),
+       url('../font/social.woff?41739959') format('woff'),
+       url('../font/social.ttf?41739959') format('truetype'),
+       url('../font/social.svg?41739959#social') format('svg');
   font-weight: normal;
   font-style: normal;
 }
- 
+
  [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "social";
   font-style: normal;
   font-weight: normal;
   speak: none;
+
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
   text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
   margin-left: .2em;
- 
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
+
+.icon-twitter:before { content: '\e802'; } /* '' */
+.icon-facebook:before { content: '\e803'; } /* '' */
+.icon-github:before { content: '\e805'; } /* '' */
+.icon-blog:before { content: '\e807'; } /* '' */
+.icon-mail:before { content: '\e808'; } /* '' */
+
 .icon-codefarm{
 background: #F6A316 url(https://codefarm.com.br/img/square.png) no-repeat fixed left top;
 background-size: 20px 20px;
 }
-.icon-codefarm:before { content: ' '} 
-.icon-mail-alt:before { content: '\e80a'; }
-.icon-facebook:before { content: '\e801'; }
-.icon-github:before { content: '\e800'; } 
-.icon-twitter:before { content: '\e802'; } 
+.icon-codefarm:before { content: ' '}
 
 .icon { float: left; }
 
