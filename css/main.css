@@ -51,13 +51,13 @@ nav#menu ul {
 
 nav#menu ul li {
   float: left;
-  padding: 0 20px;
+  padding: 0 10px;
   background: #3498db;
   list-style: none;
   margin-right: 5px;
   line-height: 50px;
   height: 50px;
-  width: 125px;
+  width: 145px;
 
   -webkit-transition:background-color 0.2s ease-in-out;
   -moz-transition:background-color 0.2s ease-in-out;
@@ -82,10 +82,11 @@ nav#menu ul li a {
   text-decoration: none;
   font-size: 1.3em;
   position: relative;
+  display: block;
 }
 
-.email { background-color: #0a88ff !important;  }
-.email:hover { background-color:#006ed6 !important; }
+.blog, .email { background-color: #0a88ff !important;  }
+.blog:hover, .email:hover { background-color:#006ed6 !important; }
 
 .facebook { background-color: #306199 !important; }
 .facebook:hover { background-color:#244872 !important; }
@@ -159,27 +160,7 @@ background-size: 20px 20px;
 
 .icon { float: left; }
 
-@media screen and (max-width: 785px) {
-
-  body {
-    padding-top: 0px;
-  }
-  nav#menu ul {
-    display: block;
-  }
-
-  nav#menu ul li {
-    float: none;
-    display: block;
-
-    margin: 5px auto !important;
-
-    width: 50%;
-  }
-
-}
-
-@media screen and (max-width: 785px) {
+@media screen and (max-width: 1028px) {
 
   body {
     padding-top: 0px;
