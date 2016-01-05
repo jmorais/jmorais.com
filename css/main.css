@@ -172,9 +172,9 @@ background-size: 20px 20px;
 @media screen and (max-width: 1028px) {
 
   body {
-    padding-top: 0px;
     margin-bottom: 20px;
   }
+
   nav#menu ul {
     display: block;
   }
