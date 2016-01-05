@@ -171,8 +171,12 @@ background-size: 20px 20px;
 
 @media screen and (max-width: 1028px) {
 
-  html {
-    padding-bottom: 75px;
+  body {
+    padding-bottom: 50px;
+  }
+
+  nav#menu, nav#menu ul {
+    height: auto;
   }
 
   nav#menu ul {
@@ -184,8 +188,13 @@ background-size: 20px 20px;
     display: block;
 
     margin: 5px auto !important;
-
     width: 50%;
   }
 
+}
+
+@media screen and (max-width: 480px) {
+  nav#menu ul li {
+    width: 75%;
+  }
 }
