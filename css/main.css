@@ -39,7 +39,9 @@ h3 {
 }
 
 h3 img {
-  width: 100px;
+  width: 75px;
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
 }
 
 nav#menu {
@@ -194,6 +196,7 @@ background-size: 20px 20px;
 }
 
 @media screen and (max-width: 480px) {
+
   nav#menu ul li {
     width: 75%;
   }
