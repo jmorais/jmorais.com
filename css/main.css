@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300);
+@import url(//fonts.googleapis.com/css?family=Lato:300);
 
 body {
   font-family: Lato, sans-serif;
@@ -164,7 +164,7 @@ nav#menu ul li a {
 .icon-mail:before { content: '\e808'; } /* '' */
 
 .icon-codefarm{
-background: #F6A316 url(https://codefarm.com.br/img/square.png) no-repeat fixed left top;
+background: #F6A316 url(//codefarm.com.br/img/square.png) no-repeat fixed left top;
 background-size: 20px 20px;
 }
 .icon-codefarm:before { content: ' '}
