@@ -1,20 +1,25 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300);
 
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Lato, sans-serif;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
-  padding-top: 50px;
-  margin: 0;
+  background-color: #0095f7;
 
  -moz-user-select: none;
  -khtml-user-select: none;
  -webkit-user-select: none;
-
- /*
-   Introduced in IE 10.
-   See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
- */
  -ms-user-select: none;
  user-select: none;
 }
@@ -25,13 +30,13 @@ h1, h2, h3 {
 }
 
 h1 {
-  color: #222;
+  color: #fff;
   font-size: 3em;
   margin-top: 15px;
 }
 
 h2 {
-  color: #555;
+  color: #fff;
 }
 
 h3 {
@@ -39,14 +44,33 @@ h3 {
 }
 
 h3 img {
-  width: 75px;
+  width: 100px;
   padding-top: 12.5px;
   padding-bottom: 12.5px;
 }
 
+.content {
+  top: 50%;
+  position: absolute;
+  width: 100%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.border {
+  border: 10px solid white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+}
+
+
 nav#menu {
   margin-top: 50px;
-  background: #3498db;
   text-align: center;
   height: 50px;
   width: 100%;
@@ -54,7 +78,6 @@ nav#menu {
 
 nav#menu ul {
   padding: 0;
-  background: white;
   margin: 0 auto;
   display: inline-block;
   height: 50px;
@@ -63,7 +86,6 @@ nav#menu ul {
 nav#menu ul li {
   float: left;
   padding: 0 10px;
-  background: #3498db;
   list-style: none;
   margin-right: 5px;
   line-height: 50px;
@@ -81,7 +103,6 @@ nav#menu ul li:nth-child(1) {
 }
 
 nav#menu ul li.active, nav#menu ul li:hover {
-  background: #2980b9;
 }
 
 nav#menu ul li:hover {
@@ -96,7 +117,7 @@ nav#menu ul li a {
   display: block;
 }
 
-.blog, .email { background-color: #0a88ff !important;  }
+/*.blog, .email { background-color: #0a88ff !important;  }
 .blog:hover, .email:hover { background-color:#006ed6 !important; }
 
 .facebook { background-color: #306199 !important; }
@@ -109,7 +130,7 @@ nav#menu ul li a {
 .twitter:hover { background-color:#0eaad6 !important;}
 
 .github { background-color: #444 !important; }
-.github:hover {background-color:#2b2b2b !important; }
+.github:hover {background-color:#2b2b2b !important; }*/
 
 @font-face {
   font-family: 'social';
@@ -169,7 +190,6 @@ background-size: 20px 20px;
 }
 .icon-codefarm:before { content: ' '}
 
-.icon { float: left; }
 
 @media screen and (max-width: 900px) {
 
