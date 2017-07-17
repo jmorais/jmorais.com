@@ -1,6 +1,6 @@
 # jmorais.com
 
-![Site](https://cloud.githubusercontent.com/assets/556684/12870607/85bb2030-cd23-11e5-8cff-cb4f4a57e6dd.png)
+![Site](https://user-images.githubusercontent.com/556684/28255959-5f7238bc-6a8b-11e7-850c-4ea676fc1c64.png)
 
 Minha homepage.
 
