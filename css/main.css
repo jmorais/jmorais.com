@@ -70,6 +70,9 @@ h3 img {
   right: 10px;
 }
 
+.border.border-404 {
+  border-style: dashed;
+}
 
 nav#menu {
   margin-top: 50px;
