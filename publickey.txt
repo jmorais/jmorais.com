@@ -1,5 +1,4 @@
 -----BEGIN PGP PUBLIC KEY BLOCK-----
-Comment: GPGTools - https://gpgtools.org
 
 mQINBFX5yrcBEADtbOx310RipgRBR/X6CjQvfdE6VqkNoFb8T32JxZAve908QvlV
 EW8UUsw8VVk+s7Za5U4IdCMLWo56Xv1jAjTLvnjxYkIIJNt69Gd2ApWfz2tU7CZ+

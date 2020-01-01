@@ -38,7 +38,6 @@ To do so, I am signing this object:
 which yields the signature:
 
 -----BEGIN PGP MESSAGE-----
-Comment: GPGTools - https://gpgtools.org
 
 owGtUmtMFFcYXRCpbqWlTTFokIYRaAO4zvuxMYU+iLEidCvBH0bWOzN3YHaXnWVf
 aFZwebYkS0EDPqotdHmbbqVYFO3DVmujQqOgFpCIVmof0VI0LZEGpTOk/dGkP3v/
