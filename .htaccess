@@ -1,0 +1,7 @@
+---
+# htaccess
+---
+
+ErrorDocument 403 /404/
+ErrorDocument 404 /404/
+Options -Indexes
