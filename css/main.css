@@ -1,4 +1,10 @@
-@import url(//fonts.googleapis.com/css?family=Lato:300);
+@import url(//fonts.googleapis.com/css?family=Archivo+Black&display=swap);
+
+:root {
+  --main: oklab(0.6747 -0.03111 -0.169671);
+  --border: #000;
+  --background:oklch(93.46% .0304 254.32);
+}
 
 body, html {
   height: 100%;
@@ -6,6 +12,7 @@ body, html {
   padding: 0;
   margin: 0;
   position: relative;
+  overflow-x: hidden;
 }
 
 * {
@@ -13,10 +20,11 @@ body, html {
 }
 
 body {
-  font-family: Lato, sans-serif;
-  font-weight: 300;
+  font-family: "Archivo Black", sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: #0095f7;
+  background-color: var(--main);
+  background-image: linear-gradient(90deg,#0001 1px,#0000 0),linear-gradient(#0001 1px,#0000 0);
+  background-size: 70px 70px;
 
  -moz-user-select: none;
  -khtml-user-select: none;
@@ -31,9 +39,30 @@ h1, h2, h3 {
 }
 
 h1 {
-  color: #fff;
-  font-size: 3em;
+  color: #ec5b56;
+
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 9px 32px;
+  border-color: #000;
+  display: inline-block;
+  font-size: 4em;
+  
+  -webkit-text-stroke: 1px black;
+  text-stroke: 1px black; /* for future spec support */
+  
+  text-shadow: 3px 3px 0px oklch(0 0 0);
+
   margin-top: 15px;
+  font-weight: bold;
+  position: relative;
+}
+
+h1 svg {
+  width: 45px;
+  height: 45px;
+  position: absolute;
 }
 
 h2 {
@@ -45,14 +74,21 @@ h3 {
 }
 
 h3 img {
-  width: 100px;
+  width: 125px;
   padding-top: 12.5px;
   padding-bottom: 12.5px;
+  filter: 
+    drop-shadow(0px 0px 0px rgba(0, 0, 0, 0))
+    drop-shadow(0px 0px 0px rgba(0, 0, 0, 0))
+    drop-shadow(0px 0px 0px rgba(0, 0, 0, 0))
+    drop-shadow(0px 0px 0px rgba(0, 0, 0, 0))
+    drop-shadow(4px 4px 0px oklch(0 0 0));
 }
 
 .content {
   text-align: center;
   top: 50%;
+  z-index: 5;
   position: absolute;
   width: 100%;
   -moz-transform: translateY(-50%);
@@ -61,13 +97,32 @@ h3 img {
   transform: translateY(-50%);
 }
 
-.border {
-  border: 10px solid white;
+.clip-container {
   position: absolute;
   top: 10px;
   left: 10px;
-  bottom: 10px;
-  right: 10px;
+  right: 6px;
+  bottom: 6px;
+
+  /* clip children to this box */
+  overflow: hidden;
+}
+
+.border {
+  border: 10px solid white;
+  position: absolute;
+  top:     0;
+  left:    0;
+  right:   4px;
+  bottom:  4px;
+  box-sizing: border-box;
+  z-index: 10;
+  filter: 
+    drop-shadow(0px 0px 0px rgba(0, 0, 0, 0))
+    drop-shadow(0px 0px 0px rgba(0, 0, 0, 0))
+    drop-shadow(0px 0px 0px rgba(0, 0, 0, 0))
+    drop-shadow(0px 0px 0px rgba(0, 0, 0, 0))
+    drop-shadow(4px 4px 0px oklch(0 0 0));
 }
 
 .border.border-404 {
@@ -91,9 +146,15 @@ nav#menu ul {
 
 nav#menu ul li {
   float: left;
-  padding: 8px 7px 9px;
+  padding: 8px 16px 9px;
   list-style: none;
   margin-right: 30px;
+
+  border: 2px solid black;
+  border-radius: 5px;
+
+  background-color: oklch(0.6747 0.1725 259.61);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklch(0 0 0) 4px 4px 0px 0px;
 
   -webkit-transition:background-color 0.2s ease-in-out;
   -moz-transition:background-color 0.2s ease-in-out;
@@ -106,7 +167,6 @@ nav#menu ul li:nth-child(1) {
 }
 
 nav#menu ul li.active, nav#menu ul li:hover {
-  border-radius: 5px;
   background: rgba(0,0,0,0.1);
 }
 
@@ -115,19 +175,28 @@ nav#menu ul li:hover {
 }
 
 nav#menu ul li a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 1.3em;
   position: relative;
   display: block;
+
 }
 
 .publickey {
   font-size: 1.15em;
   display: inline-block;
-  color: white;
+  color: black;
   text-decoration: none;
-  padding: 8px 7px 9px;
+  padding: 8px 16px 9px;
+
+  border: 2px solid black;
+  border-radius: 5px;
+
+  background-color: oklch(0.6747 0.1725 259.61);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklch(0 0 0) 4px 4px 0px 0px;
+
+
   -webkit-transition:background-color 0.2s ease-in-out;
   -moz-transition:background-color 0.2s ease-in-out;
   -o-transition:background-color 0.2s ease-in-out;
@@ -167,19 +236,19 @@ nav#menu ul li a {
 }
 
 .icon-twitter{
-  background: url(/img/twitter.svg) no-repeat;
+  background: url(/img/twitter.svg) no-repeat;  
 }
 .icon-github{
-  background: url(/img/github.svg) no-repeat;
+  background: url(/img/github.svg) no-repeat;  
 }
 .icon-mail{
-  background: url(/img/mail.svg) no-repeat;
+  background: url(/img/mail.svg) no-repeat;  
 }
 .icon-blog{
-  background: url(/img/blog.svg) no-repeat;
+  background: url(/img/blog.svg) no-repeat;  
 }
 .icon-lock{
-  background: url(/img/lock.svg) no-repeat;
+  background: url(/img/lock.svg) no-repeat;  
   background-size: 20px 20px;
 
 }
@@ -201,24 +270,30 @@ nav#menu ul li a {
 
   nav#menu ul {
     display: block;
+    max-width: 85%;
   }
 
   nav#menu ul li {
     float: none;
     display: block;
 
-    margin: 5px auto !important;
+    margin: 10px auto !important;
   }
 
 }
 
 @media screen and (max-width: 761px) {
+
+  .clip-container svg {
+    display: none;
+  }
+
   h3 img {
     width: 75px;
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 3em;
   }
 
   nav#menu {
