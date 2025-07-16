@@ -164,8 +164,8 @@ nav#menu ul li {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-nav#menu ul li:nth-child(1) {
-  margin-left: 5px;
+nav#menu ul li:last-of-type {
+  margin-right: 0;
 }
 
 nav#menu ul li.active, nav#menu ul li:hover {
