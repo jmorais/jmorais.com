@@ -3,7 +3,8 @@
 :root {
   --main: oklab(0.6747 -0.03111 -0.169671);
   --border: #000;
-  --background:oklch(93.46% .0304 254.32);
+  --background:oklch(0.9346 0.0305 255.11);
+  
 }
 
 body, html {
@@ -17,6 +18,7 @@ body, html {
 
 * {
   box-sizing: border-box;
+  outline: none;
 }
 
 body {
@@ -41,7 +43,7 @@ h1, h2, h3 {
 h1 {
   color: #ec5b56;
 
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: var(--background);
   border: 2px solid #000;
   border-radius: 5px;
   padding: 9px 32px;
@@ -106,6 +108,7 @@ h3 img {
 
   /* clip children to this box */
   overflow: hidden;
+  pointer-events: none;
 }
 
 .border {
@@ -155,11 +158,10 @@ nav#menu ul li {
 
   background-color: oklch(0.6747 0.1725 259.61);
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklch(0 0 0) 4px 4px 0px 0px;
-
-  -webkit-transition:background-color 0.2s ease-in-out;
-  -moz-transition:background-color 0.2s ease-in-out;
-  -o-transition:background-color 0.2s ease-in-out;
-  transition:background-color 0.2s ease-in-out;
+  translate: none;
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 nav#menu ul li:nth-child(1) {
@@ -167,7 +169,8 @@ nav#menu ul li:nth-child(1) {
 }
 
 nav#menu ul li.active, nav#menu ul li:hover {
-  background: rgba(0,0,0,0.1);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  translate: 4px 4px;
 }
 
 nav#menu ul li:hover {
@@ -196,17 +199,15 @@ nav#menu ul li a {
   background-color: oklch(0.6747 0.1725 259.61);
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklch(0 0 0) 4px 4px 0px 0px;
 
-
-  -webkit-transition:background-color 0.2s ease-in-out;
-  -moz-transition:background-color 0.2s ease-in-out;
-  -o-transition:background-color 0.2s ease-in-out;
-  transition:background-color 0.2s ease-in-out;
-
+  translate: none;
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .publickey:active, .publickey:hover, .publickey:focus {
-  border-radius: 5px;
-  background: rgba(0,0,0,0.1);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  translate: 4px 4px;
 }
 
 /*.blog, .email { background-color: #0a88ff !important;  }
@@ -293,7 +294,7 @@ nav#menu ul li a {
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   nav#menu {
@@ -305,5 +306,111 @@ nav#menu ul li a {
 
   nav#menu ul li {
     width: 75%;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal {
+  background: var(--background);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+
+  width: auto;
+  max-width: 85%;
+
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklch(0 0 0) 8px 8px 0px 0px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+}
+
+.modal-body p {
+  font-size: 0.75rem;
+  font-weight: thin;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.pgp {
+  padding: 2rem 1rem;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 5px;
+  overflow: scroll;
+  max-height: 300px;
+
+  /* hide scrollbar */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */ 
+}
+
+.pre-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.copy {
+  background-color: var(--main);
+  position: absolute;  
+  top: 0.5rem;
+  right: 0.5rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.copy svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.animate-enter {
+  animation: enter .15s ease;
+}
+
+.animate-exit {
+  animation: exit .15s ease-out;
+}
+
+@keyframes enter {
+  0% {
+    opacity:0;
+    transform:translate3d(0,0,0)scale3d(0.95,0.95,0.95)rotate(0);
+  }
+}
+@keyframes exit {
+  to {
+    opacity:0;
+    transform:translate3d(0,0,0)scale3d(0.95,0.95,0.95)rotate(0);
   }
 }
