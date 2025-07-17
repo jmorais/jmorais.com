@@ -321,7 +321,7 @@ nav#menu ul li a {
   border-radius: 0.5rem;
 
   width: auto;
-  max-width: 85%;
+  max-width: 590px;
 
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklch(0 0 0) 8px 8px 0px 0px;
 }
